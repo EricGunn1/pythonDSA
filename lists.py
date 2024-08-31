@@ -5,12 +5,12 @@ class ListNode:
         self.data = data
 
 
-class ListTypes:
+class Lists:
     def __int__(self):
         self.head = None
 
 
-class Stack(ListTypes):
+class Stack(Lists):
     def __int__(self):
         super().__init__()
 
@@ -34,7 +34,7 @@ class Stack(ListTypes):
         return self.head
 
 
-class Queue(ListTypes):
+class Queue(Lists):
     def __int__(self):
         self.tail = None
         super().__init__()
@@ -61,6 +61,6 @@ class Queue(ListTypes):
         return self.tail
 
 
-class LinkedList(Queue):
+class LinkedList(Lists):
     def __int__(self):
         super().__init__()

@@ -1,4 +1,5 @@
 import lists
+import trees
 
 
 class UnitTests:
@@ -8,6 +9,7 @@ class UnitTests:
     @staticmethod
     def calculateNodeData(intData, numberOfNodes):
         return intData * (numberOfNodes - 1)
+
 
 class ListUnitTests(UnitTests):
     def __init__(self, intData):
@@ -30,8 +32,6 @@ class TreeUnitTests(UnitTests):
     def __init__(self, intData):
         super().__init__(intData)
 
-    def testPush(self):
-        pass
 
-    def testPop(self):
-        pass
+
+

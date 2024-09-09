@@ -1,17 +1,17 @@
 class ListNode:
-    def __int__(self, data):
+    def __init__(self, data):
         self.next = None
         self.prev = None
         self.data = data
 
 
 class Lists:
-    def __int__(self):
+    def __init__(self):
         self.head = None
 
 
 class Stack(Lists):
-    def __int__(self):
+    def __init__(self):
         super().__init__()
 
     def pushStack(self, node):
@@ -33,9 +33,16 @@ class Stack(Lists):
 
         return self.head
 
+    def printStack(self):
+        ref = self.head
+        while ref.next:
+            print(ref.data)
+            ref = ref.next
+        print(ref.data)
+
 
 class Queue(Lists):
-    def __int__(self):
+    def __init__(self):
         self.tail = None
         super().__init__()
 
@@ -62,5 +69,5 @@ class Queue(Lists):
 
 
 class LinkedList(Lists):
-    def __int__(self):
+    def __init__(self):
         super().__init__()
